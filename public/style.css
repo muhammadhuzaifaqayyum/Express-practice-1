@@ -1,0 +1,82 @@
+*{box-sizing: border-box;}
+::selection{
+    background-color: palevioletred;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+}
+body{
+    margin: 0; 
+    color: white;
+    background-color: rgba(103, 75, 177, 1);
+    background-image: url(images//bg-desktop.svg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.logo img{
+    padding-top: 15px;
+     padding-left: 30px;
+    }
+.right img{
+    padding-top: 35px;
+    padding-left: 40px;
+}
+button{
+    padding-top: 5px;
+    border: none;
+    padding: 12px 40px 12px 40px;
+     box-shadow: 1px 1px 8px 1px gray; 
+     color: rgba(103, 75, 177, 1);
+      border-radius: 40px;
+      font-size: 1.1rem; 
+      cursor: pointer;
+      background-color: white;
+    }
+    button:hover{
+        background-color: palevioletred;
+        color: white;
+    }
+    button:focus{
+        outline: none;
+    }
+   .left{padding-top: 40px;}
+   .right{
+       padding-left: 50px;
+       padding-top: 100px;
+}
+   h2{font-size: 2.5rem;}
+   p{font-size:1.1rem;
+padding-top: 5px;}
+.icons{margin-right: 50px;}
+.icons i{
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #fff;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.icons .fb{
+padding-right: 13px;
+padding-left: 13px;}
+.icons i:hover{
+    color: palevioletred; 
+    border-color: rgb(201, 80, 120);
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url(images//bg-mobile.svg);
+    }
+    h2{font-size: 2rem;
+    text-align: center;}
+    p{font-size: 1rem;
+    text-align: center;}
+    .icons {
+        margin-top: 30px;
+        display: flex;
+    justify-content: center;
+    }
+    .btn-center{display: flex;justify-content:center;margin:0 auto;}
+  }
